@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.c2ez"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".Products"
+            android:label="@string/title_activity_products" >
+        </activity>
+        <activity
+            android:name=".Accueil"
+            android:label="@string/title_activity_accueil" >
+        </activity>
+        <activity
+            android:name=".ProductInfo"
+            android:label="@string/title_activity_product_info" >
+        </activity>
+        <activity
+            android:name=".Soudage"
+            android:label="@string/title_activity_soudage" >
+        </activity>
+        <activity
+            android:name=".ConnecteursCordons"
+            android:label="@string/title_activity_connecteurs_cordons" >
+        </activity>
+        <activity
+            android:name=".Commutateurs"
+            android:label="@string/title_activity_commutateurs" >
+        </activity>
+        <activity
+            android:name=".Composants"
+            android:label="@string/title_activity_composants" >
+        </activity>
+        <activity
+            android:name=".OptoSignalisation"
+            android:label="@string/title_activity_opto_signalisation" >
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search" >
+        </activity>
+    </application>
+
+</manifest>

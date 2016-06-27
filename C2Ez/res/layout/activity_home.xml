@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/accueil"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewpager"
+        android:scaleType="fitXY"
+        android:src="@drawable/accueil" />
+
+    <ImageView
+        android:id="@+id/composants"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/cr"
+        android:layout_toRightOf="@+id/accueil"
+        android:scaleType="fitXY"
+        android:src="@drawable/composants" />
+
+    <ImageView
+        android:id="@+id/cr"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/accueil"
+        android:scaleType="fitXY"
+        android:src="@drawable/commutateursrelais" />
+
+    <ImageView
+        android:id="@+id/cc"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/composants"
+        android:layout_toLeftOf="@+id/opto"
+        android:scaleType="fitXY"
+        android:src="@drawable/connecteurscordons" />
+
+    <ImageView
+        android:id="@+id/soudage"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/cc"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/soudage" />
+
+    <ImageView
+        android:id="@+id/opto"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/cc"
+        android:layout_toRightOf="@+id/composants"
+        android:scaleType="fitXY"
+        android:src="@drawable/optosignalisation" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_horizontal"
+        android:text="C2Ez 204, Bd Emile Zola Belvedere, Casablanca\n\nTel : 0522409949/0522405104\n\nMobile : 0661418767\n\nEmail : contact@c2ez.ma"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/term"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Nom du produit" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/term"
+        android:layout_toRightOf="@+id/cr"
+        android:background="#5115AB"
+        android:fontFamily="@string/hello_world"
+        android:padding="10dp"
+        android:text="Rechercher"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+</RelativeLayout>

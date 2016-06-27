@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">C2Ez</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_products">Products</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="title_activity_product_info">ProductInfo</string>
+    <string name="title_activity_soudage">Soudage</string>
+    <string name="title_activity_connecteurs_cordons">ConnecteursCordons</string>
+    <string name="title_activity_commutateurs">Commutateurs</string>
+    <string name="title_activity_composants">Composants</string>
+    <string name="title_activity_opto_signalisation">OptoSignalisation</string>
+    <string name="title_activity_search">Search</string>
+
+</resources>
