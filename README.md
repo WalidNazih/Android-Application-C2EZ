@@ -1,1 +1,1 @@
-# C2ez1
+# Android Application for C2Ez (Developed in 2016)
